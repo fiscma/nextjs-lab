@@ -22,6 +22,22 @@ export async function Blog() {
   );
 }
 
+export function About() {
+  return (
+    <div className="flex flex-col">
+      <div>
+        Whoami?
+      </div>
+      <div>
+        What am i doing here?
+      </div>
+      <div>
+        How to get in touch?
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -30,7 +46,7 @@ export default function Home() {
           <Blog/>
         </div>
         <div id="about" className="basis-1/2">
-            About
+            <About/>
         </div>
       </div>
       
